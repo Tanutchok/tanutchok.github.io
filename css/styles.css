@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
+  --bs-primary-rgb: 59, 165, 204;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -10881,6 +10881,92 @@ p.lead {
 }
 
 @media (min-width: 992px) {
+  #sideNav .switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;  
+  }
+  #sideNav .switch input{
+    opacity: 100;
+    width: 0;
+    height: 0;
+  }
+  #sideNav .switch .labels{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-family: sans-serif;
+    transition: all 0.4s ease-in-out;
+  }
+  #sideNav .switch .labels::after{
+    content: attr(to-en);
+    position: absolute;
+    right: 5px;
+    color: #000;
+    opacity: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease-in-out;
+  }
+  #sideNav .switch .labels::before{
+    content: attr(to-th);
+    position: absolute;
+    left: 5px;
+    color: #000;
+    opacity: 0;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease-in-out;
+  }
+  #sideNav .switch input:checked~.labels::after{
+    opacity: 0;
+  }
+  #sideNav .switch input:checked~.labels::before{
+    opacity: 1;
+  }
+  #sideNav .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bs-yellow); 
+  }
+  #sideNav .slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--bs-white);
+    -webkit-transition: .4s;
+    transition: all 0.4s ease-in-out;
+  }
+  #sideNav input:checked + .slider{ 
+    background-color: #21f39c;
+  }
+  #sideNav input:focus + .slider{
+    box-shadow: 0 0 1px #21f39c;
+  }
+  #sideNav input:checked + .slider::before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+ 
+
+  /*Rounded Slider*/
+  #sideNav .slider.round{
+   border-radius: 34px;
+  }
+  #sideNav .slider.round:before{
+    border-radius: 50%
+  }
+
   #sideNav {
     padding-left: 0;
     padding-right: 0;
@@ -10899,8 +10985,8 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 15rem;
+    max-height: 15rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {

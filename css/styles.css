@@ -10887,7 +10887,7 @@ p.lead {
   #sideNav .languages{
     position: relative;
     display: inline-block;
-    font-weight: 500;
+    font-weight: 200;
     font-size: 2rem;
     color: var(--bs-white);
   }

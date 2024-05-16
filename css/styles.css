@@ -7670,6 +7670,12 @@ textarea.form-control-lg {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.mb-6 {
+  margin-bottom: 3rem !important;
 }
 
 .mb-auto {

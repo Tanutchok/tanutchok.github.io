@@ -10974,7 +10974,7 @@ p.lead {
   --bs-link-color: white;
   display: inline-flex;
   flex-wrap: wrap;
-  position: static;
+  position: absolute;
   align-items: center;
   background-color: DodgerBlue;
   border-radius: 25px;
@@ -10983,7 +10983,7 @@ p.lead {
   text-decoration: none;
   white-space: pre-line;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-right: 1.5rem;
   word-wrap: break-word; 
   width: auto;

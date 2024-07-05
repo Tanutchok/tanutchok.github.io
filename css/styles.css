@@ -252,6 +252,7 @@ a {
 }
 a:hover {
   color: var(--bs-link-hover-color);
+
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -10970,14 +10971,25 @@ p.lead {
 
 
 .download-btn{
-  background-color: #bd5d38;
+  --bs-link-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: DodgerBlue;
   border-radius: 25px;
   color: white;
   padding: 12px 30px;
-  cursor: none;
-  font-size: 20px;
+  text-decoration: none;
+  white-space: pre;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
 
-} 
+.download-btn:hover {
+  background-color: var(--bs-yellow);
+}
+
 
 
 .dev-icons {

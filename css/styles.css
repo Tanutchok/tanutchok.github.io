@@ -10982,6 +10982,7 @@ p.lead {
   padding: 11px 30px;
   text-decoration: none;
   white-space: pre-line;
+  white-space: pre;
   cursor: pointer;
   font-size: 1.3rem;
   margin-right: 1.5rem;

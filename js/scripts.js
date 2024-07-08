@@ -6,6 +6,8 @@
 //
 // Scripts
 // 
+import 'iconify-icon'; 
+
 
 window.addEventListener('DOMContentLoaded', event => {
 

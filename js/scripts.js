@@ -10,6 +10,11 @@
 //add iconify 
 import 'iconify-icon'; 
 
+// Toggle profile's image to fullscreen 
+
+function toggleFullscreen(id){
+    document.getElementById(id).requestFullscreen();
+}
 
 window.addEventListener('DOMContentLoaded', event => {
 

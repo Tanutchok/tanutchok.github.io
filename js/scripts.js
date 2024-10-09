@@ -7,6 +7,7 @@
 // Scripts
 // 
 
+
 // create video slide
 let slideIndex = 1;
 showSlides(slideIndex);

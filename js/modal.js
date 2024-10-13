@@ -21,6 +21,7 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+// Press "ESC" button to close the modal picture
 window.addEventListener('keydown', function(event){
   if (event.key === 'Escape'){
     esc_modal.style.display = 'none'

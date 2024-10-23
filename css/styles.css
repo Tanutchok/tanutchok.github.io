@@ -2807,6 +2807,7 @@ textarea.form-control-lg {
   .btn {
     transition: none;
   }
+
 }
 .btn:hover {
   color: var(--bs-btn-hover-color);
@@ -2845,7 +2846,6 @@ textarea.form-control-lg {
   border-color: var(--bs-btn-disabled-border-color);
   opacity: var(--bs-btn-disabled-opacity);
 }
-
 .btn-primary {
   --bs-btn-color: #000;
   --bs-btn-bg: #bd5d38;
@@ -10958,28 +10958,33 @@ p.lead {
 }
 
 
+.btn-download {
+  
+}
+
 .download-btn{
-  --bs-link-color: white;
+  --bs-link-color: black;
   display: inline-flex;
   flex-wrap: wrap;
   position: absolute;
+  justify-content: center;
   align-items: center;
-  background-color: DodgerBlue;
+  background-color: var(--bs-yellow);
   border-radius: 25px;
-  color: white;
+  color: var(--bs-black);
   padding: 11px 30px;
   text-decoration: none;
-  white-space: pre-line;
   white-space: pre;
   cursor: pointer;
   font-size: 1.3rem;
   margin-right: 1.5rem;
-  word-wrap: break-word; 
   width: auto;
   overflow: auto;
   
   
 }
+
+
 
 .download-btn:hover {
   background-color: var(--bs-yellow);
@@ -11231,3 +11236,12 @@ add slideshow
     width: 100%;
   }
 } 
+
+.btn-position{
+  --bs-btn-padding-y: 11px;
+  --bs-btn-padding-x: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}

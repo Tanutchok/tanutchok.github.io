@@ -25,6 +25,7 @@
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <!-- Language dropdown -->
             <div class="dropdown">
                 <button class="btn btn-warning dropdown-toggle font-monospace" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="/assets/icons/flag_icons/tha.svg" width="30px" height="20px"> Thai
@@ -35,6 +36,7 @@
                     <li><a class="dropdown-item font-monospace" href="index_th.html"><img src="/assets/icons/flag_icons/tha.svg" width="30px" height="20px"> Thai </a></li>
                 </ul>
               </div>
+              <!-- Profile name -->
             <div class="navbar-brand js-scroll-trigger" href="#page-top">
                 <div class="d-block d-lg-none">Tanutchok Kaisaeng</div>
                 <span class="d-none d-lg-block"><img Id="myImg" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/my_profile/me.jpg" ></span>   
@@ -45,7 +47,7 @@
                 <img class="modal-content" id="img01" style="width:300%;max-width:500px">
                 <div id="caption"></div>
             </div>
-
+            <!-- Navigation lists -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
@@ -57,9 +59,13 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#works">ผลงาน</a></li>
                 </ul>
             </div>
+            <!-- darkmode switch -->
+            <div class="form-check form-switch dark-mode-btn">
+                <input class="form-check-input" type="checkbox" onclick="darkMode()"></input>
+            </div>
         </nav>
         <!-- Page Content-->
-        <div class="container-fluid p-0">
+        <div class="">
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
@@ -213,7 +219,8 @@
         <script src="js/modal.js"></script>
         <!-- tooltip -->
          <script src="/js/tooltip.js"></script>
-
+        <!-- dark mode toggle button  -->
+        <script src="darkmode.js"></script>
       
     </body>
 </html>

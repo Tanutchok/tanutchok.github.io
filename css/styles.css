@@ -11374,3 +11374,33 @@ add slideshow
   font-size: 10rem;
   margin: auto;
 }
+
+.owl-carousel{
+  top: 40px;
+}
+
+.owl-carousel .item-video{
+  height: 300px;
+}
+
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot{
+  display: inline-block;
+}
+
+.owl-dot span{
+  width: 11px;
+  height: 11px;
+  background: #ddd;
+  border-radius: 50%;
+  display: block;
+  margin: 5px 3px;
+}
+
+.owl-dot.active span{
+  background-color: #FFD700;
+}

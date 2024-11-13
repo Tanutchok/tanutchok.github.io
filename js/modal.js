@@ -5,6 +5,7 @@ var esc_modal = document.querySelector('.modal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
+var poster = document.getElementById("posImg")
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
@@ -27,4 +28,6 @@ window.addEventListener('keydown', function(event){
     esc_modal.style.display = 'none'
   }
 })
+
+
 

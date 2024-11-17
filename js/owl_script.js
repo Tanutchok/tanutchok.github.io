@@ -1,6 +1,5 @@
-$('.owl-carousel').owlCarousel({
+$('#owl-video').owlCarousel({
     merge: true,
-    nav: true,
     center: true,
     autoplay: true,
     autoplayHoverPause: true,
@@ -8,6 +7,20 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     video: true,
+    nav: true,
+    lazyload: true
+});
+
+
+$('#owl-graphic').owlCarousel({
+    margin: 10,
+    nav: true,
+    lazyload: true
+});
+
+$('#owl-img-gal').owlCarousel({
+    margin: 10,
+    nav: true,
     lazyload: true
 });
 

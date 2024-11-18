@@ -11420,4 +11420,9 @@ add slideshow
   margin: 5px 3px;
 }
 
+.dropdown-menu-center{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
+.dropdown:hover .dropdown-menu-center {display: block;}

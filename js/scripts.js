@@ -79,5 +79,5 @@ window.addEventListener('DOMContentLoaded', event => {
 
 //Call owl-carousel plugin
 $(document).ready(function(){
-    $(".owl-caroucel").owlCarousel();
+    $(".owl-carousel").owlCarousel();
 });

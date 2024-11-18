@@ -43,7 +43,7 @@
               <!-- Profile name -->
             <div class="navbar-brand js-scroll-trigger" href="#page-top">
                 <div class="d-block d-lg-none">Tanutchok Kaisaeng</div>
-                <span class="d-none d-lg-block"><img Id="myImg" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/my_profile/me.jpg" ></span>   
+                <span class="d-none d-lg-block"><img Id="myImg" style="margin-top: -57px;" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/my_profile/me.jpg" ></span>   
             </div>
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -60,7 +60,14 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">ประวัติการศึกษา</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">ความสามารถ</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">ความสนใจ</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#works">ผลงาน</a></li>
+                    <div class="nav-item dropdown text-center">
+                        <a type="button" class="nav-link js-scroll-trigger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#works">ผลงาน</a> 
+                        <div class="dropdown-menu dropdown-menu-center" style="text-align: center;">
+                            <a class="dropdown-item js-scroll-trigger" href="#videography"> ผลงานตัดต่อและถ่ายทำวิดีโอ</a>
+                            <a class="dropdown-item" href="#graphicDesign">ผลงานออกแบบกราฟฟิก</a>
+                            <a class="dropdown-item" href="#photography"> ผลงานภาพถ่าย</a>
+                        </div>
+                    </div>
                 </ul>
             </div>
             <!-- darkmode switch (coming soon) -->
@@ -216,7 +223,7 @@
                 <div class="resume-section-content">
                 <h2 class="mb-5">ผลงาน</h2>
                     <!--Create Videos Slideshow-->
-                    <h3 class = "subheading mb-3" style="margin-top: -27px;">ผลงานตัดต่อและถ่ายทำวิดีโอ</h3>
+                    <h3 id="videography" class = "subheading mb-3" style="margin-top: -27px;">ผลงานตัดต่อและถ่ายทำวิดีโอ</h3>
                     <div id = "owl-video" class="owl-carousel owl-theme">
                         <div class="item-video" data-merge="1">
                             <a class="owl-video" href="https://youtu.be/wNwaSc2iir0"></a>
@@ -244,7 +251,7 @@
                         </div>
                     </div>
                     <!--Create Images slideshow-->
-                    <h3 class="subheading mb-3" style="margin-top: 50px;">ผลงานกราฟฟิคดีไซน์</h3>
+                    <h3 id="graphicDesign" class="subheading mb-3" style="margin-top: 50px;">ผลงานกราฟฟิคดีไซน์</h3>
                     <div id ="owl-graphic" class="owl-carousel owl-theme">
                         <div class="item" style="padding-top: 70px; padding-bottom: 70px;">
                             <a><img src="assets/myWork/BackDrop_design67_export_test-01.png"></a>
@@ -253,12 +260,12 @@
                             <a><img src="assets/myWork/intern_hiring_poster.png" style="vertical-align: middle;"></a>
                         </div>
                         <div class="item" style="padding-top: 170px; padding-bottom: 190px;">
-                            <a><img src="assets/myWork/Chest Compression 2.png"></a>
+                            <a><img src="assets/myWork/Chest_com_2.png"></a>
                         </div>
                     </div>
 
                     <!--Create Photography slideshow-->
-                    <h3 class="subheading mb-3" style="margin-top: 100px;">ผลงานการถ่ายภาพ</h3>
+                    <h3 id="photography" class="subheading mb-3" style="margin-top: 100px;">ผลงานการถ่ายภาพ</h3>
                     <div id ="owl-img-gal" class="owl-carousel owl-theme">
                         <div class="item" style="padding-top: 70px; padding-bottom: 70px;">
                             <a><img src="assets/myWork/BackDrop_design67_export_test-01.png"></a>

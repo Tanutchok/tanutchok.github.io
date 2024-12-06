@@ -25,6 +25,11 @@
 
         <!--bootstrap-togglebutton-->
         <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+        <!--add bluimp CSS-->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/3.4.0/css/blueimp-gallery.min.css" integrity="sha512-8z9zEPEYVxCX7hdM+6hA0RMSW42V+XtqsyXSbNkujXYclFqhRV8J4+MasIpuYZODoHJuQgxGjcRKm//sWEQm6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/3.4.0/css/blueimp-gallery-indicator.min.css" integrity="sha512-D69ghTPtZDf3rE+wVSrQhngHouJAEnD9nHFjtfzeEUNWyYtYuOL9H1zv3rwa6OCqA5iwVC7zmk6Dgy53odYaxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -266,20 +271,53 @@
 
                     <!--Create Photography lightbox-->
                     <h3 id="photography" class="subheading mb-3" style="margin-top: 100px;">ผลงานการถ่ายภาพ</h3>
-                    <div id ="owl-img-gal" class="owl-carousel owl-theme">
-                        <div class="item" style="padding-top: 70px; padding-bottom: 70px;">
-                            <a><img src="assets/myWork/BackDrop_design67_export_test-01.png"></a>
-                        </div>
-                        <div class="item">
-                            <a><img src="assets/myWork/intern_hiring_poster.png" style="vertical-align: middle;"></a>
-                        </div>
-                        <div class="item" style="padding-top: 170px; padding-bottom: 190px;">
-                            <a><img src="assets/myWork/Chest Compression.png"></a>
-                        </div>
-                    </div>
+                    <div id="links">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/e/e3/Wonder_of_the_Seas_-_August_2021.png" data-srcset="https://upload.wikimedia.org/wikipedia/commons/e/e3/Wonder_of_the_Seas_-_August_2021.png" title="Big Ship" data-gallery="">
+                         <img loading="lazy" width="75" height="75" src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Wonder_of_the_Seas_-_August_2021.png" alt="Big Ship" />
+                        </a>
                     
-                                
-            
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/5/5f/Flickr_preppybyday_4786746354--Orange_chicken.jpg" data-srcset="https://upload.wikimedia.org/wikipedia/commons/5/5f/Flickr_preppybyday_4786746354--Orange_chicken.jpg" title="Food" data-gallery>
+                         <img loading="lazy" width="75" height="75" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Flickr_preppybyday_4786746354--Orange_chicken.jpg" alt="food" />
+                        </a>
+                    </div>
+                      <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+                    <div
+                        id="blueimp-gallery"
+                        class="blueimp-gallery"
+                        aria-label="image gallery"
+                        aria-modal="true"
+                        role = "dialog"
+                        style ="display : none;"
+                      >
+                        <div class="slides" aria-live="off"></div>
+                        <h3 class="title"></h3>
+                        <a
+                          class="prev"
+                          aria-controls="blueimp-gallery"
+                          aria-label="previous slide"
+                        ></a>
+                        <a
+                          class="next"
+                          aria-controls="blueimp-gallery"
+                          aria-label="next slide"
+                         ></a>
+                    
+                        <a
+                          class="close"
+                          aria-controls="blueimp-gallery"
+                          aria-label="close"
+                          aria-keyshortcuts="Escape"
+                         ></a>
+                        <a
+                          class="play-pause"
+                          aria-controls="blueimp-gallery"
+                          aria-label="play slideshow"
+                          aria-pressed="true"
+                          role="button"j
+                        ></a>
+                        <ol class="indicator"></ol>
+                    </div>
+        
             </section>
         </div>
         
@@ -300,6 +338,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="text/javascript" src="js/owl_script.js"></script>
         <!--add blueimp gallery-->
-            
+         
+        <!-- jquery for blueimp-->
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"
+        ></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/3.4.0/js/jquery.blueimp-gallery.min.js" integrity="sha512-PVGMO7UgCl6KmodLjaokXo5NBl7hlvonQrnaKQ4Imn1QnfWiRVD1VWO5uCI7vJktx0LKk7cMnw1yzC0rey7kMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+          <!-- blueimp-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/3.4.0/js/blueimp-gallery-indicator.min.js" integrity="sha512-QWD8JNKxwAnJuTpGdF6+oRC1MyuHauetZj9IfxJObA46zHdvezyjYsIsO7zZoV+feW23mmDdPs4HsHDYiN5BhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/3.4.0/js/blueimp-gallery-fullscreen.min.js" integrity="sha512-1lH7QKTPlgfiAbBJXcTvsYg14uhLcC8Ad2+6W1fbahJKKDr3lzpI0yWsXCA0SngPsS8Q60oV+dUOpN263wreog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/3.4.0/js/blueimp-gallery.min.js" integrity="sha512-Tt9Ui0O6Sg6FjAK5XpAIM7PCMhaXCL+i13IHLZYuluoDXlesfg+JzVI86rgUU2YnfEz2ZEDHXkRkPnHlyWnqzg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/3.4.0/js/blueimp-gallery-fullscreen.min.js" integrity="sha512-1lH7QKTPlgfiAbBJXcTvsYg14uhLcC8Ad2+6W1fbahJKKDr3lzpI0yWsXCA0SngPsS8Q60oV+dUOpN263wreog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/3.4.0/js/blueimp-helper.min.js" integrity="sha512-ULbsHJHbzmJt1p2mUhHSUyHLoEkLqh552f9j1Yc06tQihnE5w/DbGgnAnSxaq796UmigS/HlKIvQbPh48YWmGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src ="script.js"></script>
     </body>
 </html>

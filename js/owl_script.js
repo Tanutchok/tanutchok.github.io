@@ -13,9 +13,8 @@ $('#owl-video').owlCarousel({
 
 
 $('#owl-graphic').owlCarousel({
-    margin: 10,
     nav: true,
-    lazyload: true
+    lazyload: true,
 });
 
 $('#owl-img-gal').owlCarousel({
